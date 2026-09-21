@@ -1,0 +1,432 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #171a23;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    height: 72px;
+    background: rgba(255, 255, 255, 0.95);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+
+    border-bottom: 1px solid #e8e9ee;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #6c63ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555b6e;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #6c63ff;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 570px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(circle at top,
+        #eceaff,
+        #f7f8fc 60%);
+}
+
+.small-heading {
+    color: #6c63ff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 78px);
+    line-height: 1.03;
+    letter-spacing: -4px;
+    max-width: 900px;
+}
+
+.hero h1 span {
+    color: #6c63ff;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin-top: 25px;
+
+    color: #686f82;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.start-button {
+    margin-top: 35px;
+
+    padding: 15px 27px;
+
+    background: #171a23;
+    color: white;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.start-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* GENERAL SECTIONS */
+
+main {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.battle-section,
+.leaderboard-section,
+.challenges-section {
+    padding: 90px 25px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    letter-spacing: -2px;
+}
+
+.section-heading > p:last-child {
+    margin-top: 10px;
+    color: #73798a;
+}
+
+
+/* PHOTO BATTLE */
+
+.photos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.photo-card {
+    width: 43%;
+
+    background: white;
+
+    padding: 12px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px rgba(25, 30, 50, 0.08);
+
+    transition: 0.25s;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 360px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 14px;
+}
+
+.photo-card button {
+    width: 100%;
+
+    margin-top: 12px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #171a23;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.photo-card button:hover {
+    background: #6c63ff;
+}
+
+.photo-card button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.vs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vs span {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #171a23;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.next-button {
+    display: block;
+
+    margin: 30px auto 0;
+
+    padding: 13px 24px;
+
+    border: 1px solid #dfe2e9;
+
+    background: white;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-weight: 700;
+}
+
+.next-button:hover {
+    background: #f0efff;
+}
+
+
+/* LEADERBOARD */
+
+.leaderboard-section {
+    background: white;
+
+    max-width: 1050px;
+
+    margin: 30px auto;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 45px rgba(25, 30, 50, 0.06);
+}
+
+.leaderboard-list {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.leaderboard-list p {
+    padding: 18px;
+
+    border-bottom: 1px solid #edf0f5;
+
+    color: #555b6e;
+}
+
+
+/* CHALLENGES */
+
+.challenge-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.challenge-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(25, 30, 50, 0.06);
+}
+
+.challenge-icon {
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+.challenge-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.challenge-card p {
+    color: #73798a;
+
+    line-height: 1.6;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+    background: #171a23;
+
+    color: white;
+}
+
+footer p {
+    margin: 10px 0 20px;
+
+    color: #aeb3c0;
+}
+
+footer small {
+    color: #777d8d;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .battle-section,
+    .leaderboard-section,
+    .challenges-section {
+        padding: 65px 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .photos {
+        flex-direction: column;
+    }
+
+    .photo-card {
+        width: 100%;
+    }
+
+    .photo-card img {
+        height: 280px;
+    }
+
+    .vs {
+        margin: 5px 0;
+    }
+
+    .challenge-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

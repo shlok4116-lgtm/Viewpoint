@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ViewPoint</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            View<span>Point</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#battle">Battle</a>
+            <a href="#leaderboard">Leaderboard</a>
+            <a href="#challenges">Challenges</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <p class="small-heading">WELCOME TO VIEWPOINT</p>
+
+        <h1>
+            Every view has a story.
+            <br>
+            <span>Which one wins?</span>
+        </h1>
+
+        <p class="hero-text">
+            Discover beautiful places, compete with other photographers,
+            and find out which views people love the most.
+        </p>
+
+        <a href="#battle" class="start-button">
+            Start a Battle ↓
+        </a>
+
+    </section>
+
+
+    <!-- BATTLE -->
+
+    <main>
+
+        <section id="battle" class="battle-section">
+
+            <div class="section-heading">
+
+                <p class="small-heading">COMPETE</p>
+
+                <h2>Photo Battle</h2>
+
+                <p>
+                    Two views. One choice.
+                </p>
+
+            </div>
+
+
+            <div class="photos">
+
+                <div class="photo-card">
+
+                    <img id="photoA" src="" alt="Photo A">
+
+                    <button id="voteA">
+                        ❤️ Choose This
+                    </button>
+
+                </div>
+
+
+                <div class="vs">
+
+                    <span>VS</span>
+
+                </div>
+
+
+                <div class="photo-card">
+
+                    <img id="photoB" src="" alt="Photo B">
+
+                    <button id="voteB">
+                        ❤️ Choose This
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <button id="nextBattle" class="next-button">
+                Next Battle →
+            </button>
+
+        </section>
+
+
+        <!-- LEADERBOARD -->
+
+        <section id="leaderboard" class="leaderboard-section">
+
+            <div class="section-heading">
+
+                <p class="small-heading">SEE WHO'S WINNING</p>
+
+                <h2>🏆 Leaderboard</h2>
+
+                <p>
+                    The views people are choosing the most.
+                </p>
+
+            </div>
+
+
+            <div id="leaderboardList" class="leaderboard-list">
+
+                <p>No battles yet.</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHALLENGES -->
+
+        <section id="challenges" class="challenges-section">
+
+            <div class="section-heading">
+
+                <p class="small-heading">COMING SOON</p>
+
+                <h2>🎯 Challenges</h2>
+
+                <p>
+                    Compete around a theme and see whose view comes out on top.
+                </p>
+
+            </div>
+
+
+            <div class="challenge-grid">
+
+                <div class="challenge-card">
+
+                    <div class="challenge-icon">🌅</div>
+
+                    <h3>Golden Hour</h3>
+
+                    <p>
+                        Capture the most beautiful sunset or sunrise.
+                    </p>
+
+                </div>
+
+
+                <div class="challenge-card">
+
+                    <div class="challenge-icon">🌌</div>
+
+                    <h3>Night Sky</h3>
+
+                    <p>
+                        Show us your best view after dark.
+                    </p>
+
+                </div>
+
+
+                <div class="challenge-card">
+
+                    <div class="challenge-icon">🌿</div>
+
+                    <h3>Into Nature</h3>
+
+                    <p>
+                        Mountains, forests, lakes and everything wild.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="logo">
+            View<span>Point</span>
+        </div>
+
+        <p>
+            Capture. Compete. Discover.
+        </p>
+
+        <small>
+            © 2026 ViewPoint
+        </small>
+
+    </footer>
+
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>
